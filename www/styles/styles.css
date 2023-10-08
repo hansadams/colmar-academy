@@ -1,0 +1,146 @@
+/* Main */
+
+body{
+    margin: 0;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+  }
+
+.tab {
+    display: flex; 
+}
+
+.tab img {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+
+.tab-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 25%;
+    margin: 30px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.col-left {
+    flex: 60%;
+    padding: 32px 24px 32px 24px;
+  }
+
+.col-right {
+    flex: 40%;
+    padding-top: 32px;
+}
+
+.col-left img {
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    max-width: 100%;
+    padding: 0 24px;
+}
+
+.navbar #brand {
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.navbar #logo {
+   width: 40px;
+}
+
+/* Hero */
+
+#hero {
+    background-color: blanchedalmond;
+    padding: 0 ;
+}
+
+#hero button {
+    padding: 8px;
+    width: 100%;
+}
+
+#hero .col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header-box {
+    width: 70%
+}
+
+
+
+
+/* Info */
+
+#info-tab {
+    border-left: 1px solid;
+}
+
+/* Courses */
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#courses h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#courses {
+    justify-content: center;
+}
+
+/* Thesis Exibit */
+
+#thesis-tab {
+    border-left: 1px solid;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    max-width: 100%;
+    padding: 0 24px;
+}
+
+
+
+
+
+
+
+  
+
+
