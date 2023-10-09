@@ -11,23 +11,28 @@
     <!-- Navbar -->
     <div class="navbar">
         <div id="brand">
-            <img id="logo" src="media/img/ic-logo.svg">
-            <h1>COLMAR ACADEMY</h1>
+            <img id="icon" src="media/img/ic-logo.svg">
+            <h1 class="desktop"> COLMAR<span>ACADEMY</span></h1>
         </div>
         <div id="nav-links">
-            <a href="">On Campus</a>
-            <a href="">Online</a>
-            <a href="">For companies</a>
-            <a href="">Sign in</a>
+            <a class="desktop" href="">On Campus</a>
+            <a class="desktop" href="">Online</a>
+            <a class="desktop" href="">For Companies</a>
+            <a class="desktop" href="">Sign In</a>
         </div>
+        <div class="mobile-nav">
+            <a href=""><img id="icon" src="media/img/ic-on-campus.svg"></a>
+            <a href=""><img id="icon" src="media/img/ic-online.svg"></a>
+            <a href=""><img id="icon" src="media/img/ic-login.svg"></a>
+            </div>
     </div>
 
     <!-- Hero Section -->
     <div class="row" id="hero">
-        <div class="col-left">
+        <div class="column left">
             <img src="media/img/banner.jpg">
         </div>
-        <div class="col-right" id="header">
+        <div class="column right" id="header">
             <div id="header-box">
             <h2>Learn Something New Everyday</h2>
             <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
@@ -38,35 +43,44 @@
 
     <!-- Information -->
     <div class="row" id="info">
-        <div class="col-left">
+        <div class="column left">
             <img src="media/img/information-main.jpg">
             <h2> It doesn't hurt to keep practicing</h2>
             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores reprehenderit facilis obcaecati id, nemo sunt, fuga natus velit quam accusantium! Ullam minus illum reiciendis tempora quas repudiandae voluptatibus dolorum."</p>
             <p>Emanuel, Sr Strategist at Hiring.com</p>
         </div>
-        <div class="col-right" id="info-tab">
+        <div class="column right" id="info-tab">
             <div class="tab" id="orientation">
-                <img src="media/img/information-orientation.jpg">
+                <div class="tab-img">
+                     <img class="desktop" src="media/img/information-orientation.jpg">
+                     <img class="mobile" src="media/img/information-orientation-mobile.jpg">
+                </div>
                 <div class="tab-info">
-                <h4>Orientation date</h4>
-                <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                <a href="">Read more</a>
+                     <h4>Orientation Date</h4>
+                     <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                     <a href="">Read more</a>
                 </div>
             </div>
-            <div class="tab" id="campus">
-                <img src="media/img/information-campus.jpg">
-                <div class="tab-info">
+            <div class="tab" id="campus" style="border-top:1px solid; border-bottom: 1px solid;" >
+                <div class="tab-img">
+                    <img class="desktop" src="media/img/information-campus.jpg">
+                    <img class="mobile" src="media/img/information-campus-mobile.jpg">
+                </div>
+                     <div class="tab-info">
                 <h4>Our Campus</h4>
                 <p>Find which campus is close by you</p>
                 <a href="">Read more</a>
-                </div>
+                     </div>
             </div>            
             <div class="tab" id="guest-lecture">
-                <img src="media/img/information-guest-lecture.jpg">
+                <div class="tab-img">
+                    <img class="desktop" src="media/img/information-guest-lecture.jpg">
+                    <img class="mobile" src="media/img/information-guest-lecture-mobile.jpg">
+                </div>
                 <div class="tab-info">
-                <h4>Our guest lecture</h4>
-                <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                <a href="">Read more</a>
+                     <h4>Our Guest Lecture</h4>
+                     <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                     <a href="">Read more</a>
                 </div>
             </div>
         </div>
@@ -74,62 +88,79 @@
 
     <!-- Courses -->
     <div class="row" id="courses">
-        <h3>Start learning</h3>
+        <h3>Start Learning</h3>
+        <div class="course-info">
         <div class="card">
             <img src="media/img/course-software.jpg">
-            <h4>Software engineering</h4>
+            <div class="card-info">
+                
+            <h4>Software Engineering</h4>
             <h6>COURSES</h6>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p></div>
         </div>
         <div class="card">
             <img src="media/img/course-computer-art.jpg">
-            <h4>Computer art</h4>
+            <div class="card-info">
+                <h4>Computer Art</h4>
             <h6>COURSES</h6>
-            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p></div>
         </div>
         <div class="card">
             <img src="media/img/course-design.jpg">
-            <h4>Design</h4>
+            <div class="card-info">
+                <h4>Design</h4>
             <h6>COURSES</h6>
-            <p>User Experience Design, User Research, Visual Design</p>
+            <p>User Experience Design, User Research, Visual Design</p></div>
         </div>
         <div class="card">
             <img src="media/img/course-data.jpg">
-            <h4>Data</h4>
+            <div class="card-info">
+                <h4>Data</h4>
             <h6>COURSES</h6>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
+            <p>Data Science, Big Data, SQL, Data Visualization</p></div>
         </div>
         <div class="card">
             <img src="media/img/course-business.jpg">
-            <h4>Business</h4>
+            <div class="card-info">
+                <h4>Business</h4>
             <h6>COURSES</h6>
-            <p>Product Development, Business Development, Startup</p>
+            <p>Product Development, Business Development, Startup</p></div>
         </div>
         <div class="card">
             <img src="media/img/course-marketing.jpg">
-            <h4>Marketing</h4>
+            <div class="card-info">
+                <h4>Marketing</h4>
             <h6>COURSES</h6>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p></div>
+        </div>
         </div>
     </div>
 
     <!-- Thesis Exibit -->
-    <div class="row" id="theis">
-        <div class="col-left">
-            <img src="media/img/information-main.jpg">
-            <h4>Reimagine urban</h4>
+    <div class="row" id="thesis">
+        <h3>Thesis Exhibits</h3>
+        <div class="column left">
+            <video width="100%" controls>
+                <source src="media/vid/thesis.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            <h4>Reimagine Urban</h4>
             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores reprehenderit facilis obcaecati id, nemo sunt, fuga natus velit quam accusantium! Ullam minus illum reiciendis tempora quas repudiandae voluptatibus dolorum."</p>
         </div>
-        <div class="col-right">
+        <div class="column right">
             <div class="tab" id="fisma">
+                <div class="tab-img">
                 <img src="media/img/thesis-fisma.jpg">
+                </div>
                 <div class="tab-info">
                 <h4>Fisma: Design and Prototype</h4>
                 <p>Designer showcase of new prototype product</p>
                 </div>
             </div>
             <div class="tab" id="campus">
+                <div class="tab-img">
                 <img src="media/img/thesis-now-and-then.jpg">
+                </div>
                 <div class="tab-info">
                 <h4>Now and then</h4>
                 <p>Research study about New York</p>
@@ -143,7 +174,7 @@
         <div id="copyright">
         <p>© 2016 Colmar Academy | All rights reserved</p>
         </div>
-        <div id="nav-links">
+        <div class ="desktop" id="nav-links">
         <a href="">Terms</a>
         <a href="">Privacy</a>
         </div>

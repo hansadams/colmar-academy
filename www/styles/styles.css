@@ -1,29 +1,52 @@
 /* Main */
 
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     max-width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+button {
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    padding: 8px 7vw;
+}
+
+img {
+    width: 100%;
+}
+
+/* Typography */
+
 h1 {
     font-size: 2rem;
+    letter-spacing: -2;
+}
+
+h1 span {
+    font-weight: 200;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 28px;
-    margin: 8px 0;
+    margin: 32px 0 24px 0;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 3em;
     width: 100%;
     text-align: center;
+    margin: 0;
 }
 
 h4 {
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin: 8px 0;
 }
 
@@ -32,57 +55,96 @@ h5 {
     line-height: 1;
 }
 
-button {
-    font-size: 1em;
-    background-color: black;
-    color: white;
-
+h6 {
+    font-size: 1rem;
+    margin: 8px 0;
 }
 
-/* Classes */
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
 
-.row {
+
+
+
+/* For Mobile Responsiveness */
+
+.mobile {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+   .mobile-nav {
     display: flex;
-    width: 100%;
-  }
+    width: 80%;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    }
+}
+
+
+
+/* Tabs */
 
 .tab {
-    display: flex; 
-}
-
-.tab img {
-    width: 35%;
-    height: auto;
+    display: flex;
+    flex-wrap: wrap; 
     padding: 16px;
 }
 
+.tab:hover {
+    background-color: gray;
+}
+
+.tab-img {
+    width: 35%;
+    height: auto;
+    padding: 0 16px 0 0;
+}
+
 .tab-info {
+    width: 65%;
     display: flex;
     flex-direction: column;
 }
 
-.card {
-    max-width: 25%;
-    margin: 30px;
+@media screen and (max-width: 700px) {
+    .tab-img {
+        width: 100%;
+        height: auto;
+        padding: 0 0 16px 0 ;
+    }
+    
+    .tab-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+
+    }
+    .tab {
+        padding-bottom: 32px;
+    }
 }
 
-.card img {
-    width: 100%;
-}
 
-.col-left {
-    flex: 60%;
-    padding: 32px 24px 32px 24px;
-  }
 
-.col-right {
-    flex: 40%;
-    padding-top: 32px;
-}
 
-.col-left img {
-    width: 100%;
-}
 
 /* Navbar */
 
@@ -93,6 +155,8 @@ button {
     height: 64px;
     max-width: 100%;
     padding: 0 24px;
+    background-color: white;
+    border-bottom: 1px solid;
 }
 
 .navbar #brand {
@@ -100,75 +164,239 @@ button {
     justify-content: flex-start;
 }
 
-.navbar #logo {
+.navbar #icon {
    width: 40px;
 }
 
-/* Hero */
+.navbar a {
+    padding: 0 8px;
+}
+
+.navbar a:hover {
+    color: gray;
+}
+
+
+
+
+  /* Rows & Columns */
+
+.row {
+    padding: 32px 24px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    
+}
+
+.left {
+    width: 60%;
+    padding-right: 24px;
+}
+
+.right {
+    width: 40%;
+    height: inherit;
+}
+  
+@media screen and (max-width: 700px) {
+
+    .row {
+        padding: 0;
+    }
+    
+    .column {
+      width: 100%;
+    }
+
+    .left {
+        padding-right: 0;
+    }
+  }
+
+/* Main Hero */
 
 #hero {
-    background-color: blanchedalmond;
-    padding: 0 ;
+    background-color: lightgrey;
 }
 
-#hero button {
-    padding: 8px;
-    width: 100%;
+#hero h2 {
+    font-size: 3.5vw;
+    line-height: 1;
 }
 
-#hero .col-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#hero h5 {
+    font-size: 2vw;
 }
 
 #header-box {
-    width: 70%
+    width: 70%;
+    height: auto;
+    vertical-align: middle;
 }
 
+
+@media screen and (max-width: 700px) {
+    #header-box {
+        width: 100%;
+        text-align: center;
+        padding: 0 16px 32px 16px ;
+    }
+
+    #hero h2 {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    
+    #hero h5 {
+        font-size: 1.2rem;
+    }
+}
 
 
 
 /* Info */
 
-#info-tab {
-    border-left: 1px solid;
+  #info {
+    background-color: white;
 }
 
-#info h2 {
-    margin: 32px 0 24px 0;
+  @media screen and (max-width: 700px) {
+    #info .left {
+        display: none;
+    }
 }
 
-/* Courses */
+#info .left {
+    border-right: 1px solid;
+}
+
+
+  /* Courses */
 
 #courses {
+    background-color: lightgrey;
+}
+
+
+#courses h3 {
+    padding: 0 0 32px 0;
+}
+
+.course-info {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-}
-
-#courses {
     justify-content: center;
+    padding: 0 72px;
 }
 
-/* Thesis Exibit */
-
-#thesis-tab {
-    border-left: 1px solid;
+.card {
+    width: 30%;
+    min-width: 300px;
+    margin: 16px;
+    background-color: gray;
 }
 
-/* Footer */
-.footer {
+.card:hover {
+    background-color: darkgrey;
+}
+
+.card img {
+    width: 100%;
+}
+
+
+.card-info {
+    padding: 16px 16px 24px 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 100%;
+        margin: 4px;
+    }
+
+    .card img {
+        display: none;
+    }
+
+    .card p {
+        display: none;
+    }
+
+    .card h6 {
+        display: none;
+    }
+
+    #courses h3 {
+        padding: 32px 0 16px 0;
+    }
+    
+    #courses {
+        padding-bottom: 32px;
+    }
+
+    .course-info {
+        padding: 24px;
+    }
+}
+
+/* Thesis */
+
+#thesis h3 {
+    padding: 0 0 32px 0;
+}
+
+@media screen and (max-width: 700px) {
+    #thesis .right {
+        display: none;
+    }
+
+    #thesis p {
+        display: none;
+    }
+
+    #thesis h4 {
+        display: none;
+    }
+
+    #thesis h3 {
+        padding: 32px 0 16px 0;
+    }
+
+    #thesis {
+        padding-bottom: 24px;
+    }
+}
+
+  /* Footer */
+
+  .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 64px;
     max-width: 100%;
     padding: 0 24px;
+    background-color: gray;
+    border-top: 1px solid;
 }
 
+.footer a {
+    padding: 0 8px;
+}
 
-
-
+.footer a:hover {
+    color: darkgray;
+}
 
 
 
