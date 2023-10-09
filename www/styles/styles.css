@@ -3,11 +3,43 @@
 body{
     margin: 0;
     max-width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 2rem;
 }
+
+h2 {
+    font-size: 2em;
+    line-height: 28px;
+    margin: 8px 0;
+}
+
+h3 {
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+h5 {
+    font-size: 1.3em;
+    line-height: 1;
+}
+
+button {
+    font-size: 1em;
+    background-color: black;
+    color: white;
+
+}
+
+/* Classes */
 
 .row {
     display: flex;
@@ -103,16 +135,15 @@ h1 {
     border-left: 1px solid;
 }
 
+#info h2 {
+    margin: 32px 0 24px 0;
+}
+
 /* Courses */
 
 #courses {
     display: flex;
     flex-wrap: wrap;
-}
-
-#courses h2 {
-    width: 100%;
-    text-align: center;
 }
 
 #courses {
