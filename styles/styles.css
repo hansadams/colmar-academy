@@ -302,11 +302,11 @@ a {
     width: 30%;
     min-width: 300px;
     margin: 16px;
-    background-color: gray;
+    background-color: grey;
 }
 
 .card:hover {
-    background-color: darkgrey;
+    background-color: rgba(255, 0, 0, 0.493);
 }
 
 .card img {
@@ -386,7 +386,7 @@ a {
     height: 64px;
     max-width: 100%;
     padding: 0 24px;
-    background-color: gray;
+    background-color: lightgrey;
     border-top: 1px solid;
 }
 
@@ -395,7 +395,7 @@ a {
 }
 
 .footer a:hover {
-    color: darkgray;
+    color: rgba(255, 0, 0, 0.493);
 }
 
 
