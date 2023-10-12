@@ -302,7 +302,7 @@ a {
     width: 30%;
     min-width: 300px;
     margin: 16px;
-    background-color: grey;
+    background-color: rgb(230, 168, 168);
 }
 
 .card:hover {
